@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-box {
+    background: #ffffff;
+    padding: 40px 35px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 380px;
+}
+
+.login-box h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 26px;
+    color: #333333;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.25);
+}
+
+
+/* ==============================================
+   PHẦN SỬA ĐỔI: THIẾT KẾ LẠI BUTTON ĐẸP HƠN
+   ============================================== */
+
+.login-box button,
+#submit-btn {
+    width: 100%;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    transition: transform 0.1s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+
+/* Hiệu ứng khi di chuột qua (Hover) */
+
+.login-box button:hover,
+#submit-btn:hover {
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+    opacity: 0.95;
+}
+
+
+/* Hiệu ứng nén nút khi bấm giữ (Click) */
+
+.login-box button:active,
+#submit-btn:active {
+    transform: scale(0.97);
+}

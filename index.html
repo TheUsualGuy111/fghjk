@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống Quản lý Sách</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app-box">
+        <div class="header-bar">
+            <h2>Quản lý Sách</h2>
+            <div>
+                <span>Xin chào, <b id="user-display"></b>!</span>
+                <!-- Đã thêm id="logout-btn" để đồng bộ với mã JavaScript mới -->
+                <button type="button" id="logout-btn" class="btn-logout" onclick="handleLogout()">Đăng xuất</button>
+            </div>
+        </div>
+
+        <form id="book-form" onsubmit="handleSaveBook(event)" class="book-form">
+            <input type="text" id="book-code" placeholder="Mã sách (VD: MS01)" required>
+            <input type="text" id="book-title" placeholder="Tên sách" required>
+            <input type="text" id="book-author" placeholder="Tác giả" required>
+            <input type="number" id="book-year" placeholder="Năm xuất bản" required min="1000" max="2026">
+            <button type="submit" id="submit-btn">Thêm sách</button>
+        </form>
+
+        <!-- Bảng hiển thị danh sách sách -->
+        <table class="book-table" border="1" style="width: 100%; margin-top: 20px; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Mã sách</th>
+                    <th>Tên sách</th>
+                    <th>Tác giả</th>
+                    <th>Năm XB</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody id="book-list">
+                <!-- Danh sách sách sẽ được hiển thị ở đây thông qua JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- ĐỪNG QUÊN: Đổi 'script.js' thành tên file JavaScript thực tế của bạn -->
+    <script src="script.js"></script>
+</body>
+
+</html>

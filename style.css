@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.app-box {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 900px;
+}
+
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.header-bar h2 {
+    margin: 0;
+    color: #333;
+}
+
+
+/* NÚT ĐĂNG XUẤT (Giữ nguyên gốc, thêm hiệu ứng bấm) */
+
+.btn-logout {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-logout:hover {
+    background: #c0392b;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: left;
+}
+
+table th {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+
+/* ================= THÊM NÚT MỚI GỌN NHẤT ================= */
+
+button {
+    font-family: inherit;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:active,
+.btn-logout:active {
+    transform: scale(0.96);
+}
+
+
+/* Hiệu ứng nhấn nút */
+
+
+/* Nút Thêm sách */
+
+#submit-btn {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+#submit-btn:hover {
+    opacity: 0.9;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+
+/* Nút Sửa & Xóa trong bảng */
+
+.btn-edit {
+    background: #e3f2fd;
+    color: #1e88e5;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.btn-edit:hover {
+    background: #1e88e5;
+    color: white;
+}
+
+.btn-delete {
+    background: #fbe9e7;
+    color: #f4511e;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.btn-delete:hover {
+    background: #f4511e;
+    color: white;
+}
